@@ -1,14 +1,17 @@
-import React from 'react';
 import ApiCaller from './components/CorsTest'; // Component ကို Import လုပ်ခြင်း
+import Frontend_Cokkie_Test from './components/cokkie_test/Frontend_Cokkie_Test';
+import JWTTester from './components/jwt/JWTTester';
+import JWTApiTester from './components/jwt/JWTApiTester';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Vite + React CORS Proxy Test</h1>
-      <p>This is the main App component.</p>
-      
+    <div >
       {/* Component အသစ်ကို ဤနေရာတွင် ခေါ်သုံးထားသည် */}
       <ApiCaller />
+      <br></br>
+      <Frontend_Cokkie_Test/>
+      <JWTTester/>
+      <JWTApiTester/>
       
     </div>
   );

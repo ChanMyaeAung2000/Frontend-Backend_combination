@@ -18,4 +18,11 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
+  {
+    // vite.config.js သည် Node တွင် အလုပ်လုပ်သောကြောင့် process ကို ခွင့်ပြုသည်
+    files: ['vite.config.js'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ])
